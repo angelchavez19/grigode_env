@@ -103,9 +103,9 @@ And the result is as follows:
 USER1: User(name='John', last_name='Doe', age=30, city='New York')
 ```
 
-## Multiple archivos
+## Multiple files
 
-Puedes leer más archivos, con la misma clase, siempre y cuando terminen con la extension `.env`:
+You can read more files, with the same class, as long as they end with the `.env` extension:
 
 ```python
 from grigode_env import Environ
@@ -117,7 +117,7 @@ for key, value in environ.items():
 
 ```
 
-Si desea separar las variables de un archivo de las de otro, puede agregar el atributo `merge_files` en `False`:
+If you want to separate the variables from one file from those of another, you can add the `merge_files` attribute to `False`:
 
 ```python
 from grigode_env import Environ
